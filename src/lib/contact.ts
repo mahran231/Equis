@@ -47,6 +47,14 @@ export function getContactChannels(cfg = businessConfig): ContactChannel[] {
   return out;
 }
 
+/** WhatsApp chat link, optionally with a pre-filled first message. Null when no number is configured. */
+export function getWhatsAppLink(prefill?: string, cfg = businessConfig): string | null {
+  const wa = cfg.whatsappNumber ? normalizePhone(cfg.whatsappNumber) : null;
+  if (!wa) return null;
+  const base = `https://wa.me/${wa.e164.slice(1)}`;
+  return prefill ? `${base}?text=${encodeURIComponent(prefill)}` : base;
+}
+
 export type SocialLink = { network: keyof typeof businessConfig.social; href: string };
 
 export function getSocialLinks(cfg = businessConfig): SocialLink[] {

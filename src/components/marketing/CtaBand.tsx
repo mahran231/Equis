@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { ButtonLink } from "@/components/ui/ButtonLink";
+import { WhatsAppButton } from "./WhatsAppButton";
 
 export async function CtaBand() {
   const t = await getTranslations();
@@ -13,9 +14,12 @@ export async function CtaBand() {
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-cream/85">{t("home.finalCta.lead")}</p>
           </div>
-          <ButtonLink href="/contact" variant="inverse" className="shrink-0">
-            {t("common.ctaPrimary")}
-          </ButtonLink>
+          <div className="flex w-full shrink-0 flex-col gap-3 sm:w-auto sm:flex-row md:flex-col lg:flex-row">
+            <ButtonLink href="/contact" variant="inverse">
+              {t("common.ctaPrimary")}
+            </ButtonLink>
+            <WhatsAppButton variant="inverseOutline" />
+          </div>
         </div>
       </div>
     </section>

@@ -3,7 +3,8 @@ import { getTranslations } from "next-intl/server";
 import { resolveLocale } from "@/lib/page";
 import { pageMetadata } from "@/lib/seo";
 import { isEnquiryConfigured } from "@/lib/enquiry/adapter";
-import { getContactChannels } from "@/lib/contact";
+import { getContactChannels, getWhatsAppLink } from "@/lib/contact";
+import { WhatsAppButton } from "@/components/marketing/WhatsAppButton";
 import { PageHeader } from "@/components/marketing/PageHeader";
 import { EnquiryForm } from "@/components/forms/EnquiryForm";
 
@@ -18,6 +19,7 @@ export default async function ContactPage({ params }: PageProps<"/[locale]/conta
   const t = await getTranslations("contact");
   const channels = getContactChannels();
   const configured = isEnquiryConfigured();
+  const hasWhatsApp = getWhatsAppLink() !== null;
 
   return (
     <>
@@ -25,6 +27,20 @@ export default async function ContactPage({ params }: PageProps<"/[locale]/conta
       <div className="bg-white py-14 md:py-20">
         <div className="container-site grid gap-12 lg:grid-cols-[1.6fr_1fr] lg:gap-16">
           <div>
+            {hasWhatsApp ? (
+              <section
+                aria-labelledby="whatsapp"
+                className={`mb-10 rounded-[12px] p-7 ${configured ? "border border-neutral bg-cream" : "bg-evergreen text-cream"}`}
+              >
+                <h2 id="whatsapp" className="font-serif text-2xl font-medium">
+                  {t("whatsappTitle")}
+                </h2>
+                <p className={`mt-2 leading-relaxed ${configured ? "text-evergreen/80" : "text-cream/85"}`}>
+                  {t("whatsappLead")}
+                </p>
+                <WhatsAppButton variant={configured ? "primary" : "inverse"} className="mt-5 w-full sm:w-auto" />
+              </section>
+            ) : null}
             <EnquiryForm configured={configured} hasDirectContact={channels.length > 0} />
           </div>
           <aside className="space-y-6">

@@ -144,3 +144,19 @@ test("legal pages are marked as drafts, not reviewed", async ({ page }) => {
     await expect(page.getByRole("note").filter({ hasText: "not yet been legally reviewed" })).toBeVisible();
   }
 });
+
+test("WhatsApp contact links use the configured number with a localized greeting", async ({ page }) => {
+  await page.goto("/ar/contact");
+  const link = page.getByRole("link", { name: /كلمنا على واتساب/ }).first();
+  await expect(link).toBeVisible();
+  const href = (await link.getAttribute("href"))!;
+  expect(href.startsWith("https://wa.me/201055663884?text=")).toBe(true);
+  expect(decodeURIComponent(href.split("text=")[1])).toBe("أهلًا EQUIS، حابب أسأل عن الاستشارة.");
+  await expect(link).toHaveAttribute("rel", /noopener/);
+  await page.goto("/en");
+  await expect(page.getByRole("link", { name: /Message us on WhatsApp/ })).toHaveAttribute(
+    "href",
+    /^https:\/\/wa\.me\/201055663884\?text=/,
+  );
+  await expect(page.locator("footer")).toContainText("+20 10 5566 3884");
+});

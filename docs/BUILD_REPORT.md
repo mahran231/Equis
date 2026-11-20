@@ -26,7 +26,7 @@ The site has no coaching-platform features. There is no login, dashboard, databa
 | Services | `/…/services` | Done. No prices, no guarantees. |
 | How it works | `/…/how-it-works` | Done. Explanatory only. |
 | FAQ | `/…/faq` | Done. Answers are drafts awaiting approval. |
-| Contact / Consultation | `/…/contact` | Done. The form is disabled until a provider is configured. |
+| Contact / Consultation | `/…/contact` | Done. WhatsApp is the main action; the form is disabled until a provider is configured. |
 | Privacy policy | `/…/privacy` | Draft, marked "not legally reviewed" |
 | Terms of use | `/…/terms` | Draft, marked "not legally reviewed" |
 | Transformations | `/…/transformations` | Hidden (404). Needs the flag **and** consented items. |
@@ -65,9 +65,9 @@ Unknown paths return a localized 404. `/` redirects to the visitor's browser lan
 |---|---|
 | `npm run typecheck` | Pass |
 | `npm run lint` | Pass (0 warnings) |
-| `npm test` (Vitest) | 34 / 34 pass |
+| `npm test` (Vitest) | 35 / 35 pass |
 | `npm run build` | Pass |
-| `npm run test:e2e` (Playwright) | 41 / 41 pass |
+| `npm run test:e2e` (Playwright) | 42 / 42 pass |
 
 What the end-to-end suite covers:
 - All 24 page/locale combinations: status 200, `lang` and `dir` set correctly, a single h1, canonical plus 4 hreflang links, logo artwork present, and no empty, `#` or placeholder links.
@@ -122,8 +122,9 @@ Screenshots: `docs/screenshots/`.
 
 ## Before launch (from `OPEN_ITEMS.md`)
 
-- [ ] Domain: set `NEXT_PUBLIC_SITE_URL`. Until then, canonical URLs and the sitemap use `http://localhost:3000`.
-- [ ] Contact email, phone and WhatsApp, and social URLs in `src/config/business.ts`.
+- [ ] Domain (not purchased yet): set `NEXT_PUBLIC_SITE_URL` once bought. Until then, canonical URLs and the sitemap use `http://localhost:3000`.
+- [x] WhatsApp: `+20 10 5566 3884` (supplied 2026-11-20). It shows in the footer, as a WhatsApp button next to "Start your consultation", and as the main action on the Contact page, with a pre-filled greeting in the visitor's language.
+- [ ] Optional: a public email and social URLs in `src/config/business.ts`. Phone calls are not shown separately; set `phone` to show them too.
 - [ ] Approve all copy in three languages, then set `copyApproved: true`. This removes the banner and enables indexing.
 - [ ] Approve the FAQ answers and service descriptions, and confirm the service format (online, in person or both).
 - [ ] Get the Privacy Policy and Terms legally reviewed for Egypt and the Gulf, then set `legalReviewed: true` and `legalLastUpdated`.

@@ -343,7 +343,12 @@
         "notConfiguredWithContact": "Les demandes en ligne ne sont pas encore ouvertes. Utilisez les coordonnées directes indiquées sur cette page.",
         "notConfiguredNoContact": "Les demandes en ligne ne sont pas encore ouvertes. Revenez bientôt."
       }
-    }
+    },
+    "whatsappCta": "Écrivez-nous sur WhatsApp",
+    "whatsappTitle": "Discutons sur WhatsApp",
+    "whatsappLead": "Envoyez-nous un message sur votre objectif et nous vous répondrons sur WhatsApp.",
+    "whatsappPrefill": "Bonjour EQUIS, je souhaite me renseigner sur une consultation.",
+    "opensWhatsapp": "ouvre WhatsApp"
   },
   "privacy": {
     "title": "Politique de confidentialité",

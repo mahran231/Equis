@@ -5,7 +5,7 @@ import fr from "@/messages/fr.json";
 import { businessConfig } from "@/config/business";
 import { contentConfig } from "@/config/content";
 import { enabledPages, mainNav } from "@/config/pages";
-import { getContactChannels, getSocialLinks } from "@/lib/contact";
+import { getContactChannels, getSocialLinks, getWhatsAppLink } from "@/lib/contact";
 import { createRateLimiter } from "@/lib/spam/rateLimit";
 
 function shape(value: unknown, path = ""): string[] {
@@ -57,9 +57,25 @@ describe("content gating", () => {
 });
 
 describe("contact details", () => {
+  const blank = {
+    ...businessConfig,
+    contactEmail: "",
+    phone: "",
+    whatsappNumber: "",
+    social: { instagram: "", facebook: "", tiktok: "", youtube: "" },
+  };
+
   it("publishes nothing while business details are blank", () => {
-    expect(getContactChannels(businessConfig)).toEqual([]);
-    expect(getSocialLinks(businessConfig)).toEqual([]);
+    expect(getContactChannels(blank)).toEqual([]);
+    expect(getSocialLinks(blank)).toEqual([]);
+    expect(getWhatsAppLink("hi", blank)).toBeNull();
+  });
+
+  it("uses the configured Egyptian WhatsApp number in international format", () => {
+    expect(getContactChannels(businessConfig)).toEqual([
+      { kind: "whatsapp", href: "https://wa.me/201055663884", display: "+20 10 5566 3884" },
+    ]);
+    expect(getWhatsAppLink("أهلًا EQUIS")).toBe(`https://wa.me/201055663884?text=${encodeURIComponent("أهلًا EQUIS")}`);
   });
 
   it("builds safe links only from valid configured values", () => {

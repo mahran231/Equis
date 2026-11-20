@@ -343,7 +343,12 @@
         "notConfiguredWithContact": "Online enquiries are not open yet. Please use the direct contact details on this page instead.",
         "notConfiguredNoContact": "Online enquiries are not open yet. Please check back soon."
       }
-    }
+    },
+    "whatsappCta": "Message us on WhatsApp",
+    "whatsappTitle": "Chat with us on WhatsApp",
+    "whatsappLead": "Send us a message about your goal and we'll reply on WhatsApp.",
+    "whatsappPrefill": "Hi EQUIS, I'd like to ask about a consultation.",
+    "opensWhatsapp": "opens WhatsApp"
   },
   "privacy": {
     "title": "Privacy policy",

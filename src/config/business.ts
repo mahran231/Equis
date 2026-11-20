@@ -3,7 +3,8 @@ export const businessConfig = {
   founderName: "Dr. Mahran Mohamed",
   contactEmail: "",
   phone: "",
-  whatsappNumber: "",
+  // International format (+20 = Egypt) so links work from the Gulf too.
+  whatsappNumber: "+20 10 5566 3884",
   address: "",
   social: {
     instagram: "",
