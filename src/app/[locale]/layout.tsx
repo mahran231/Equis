@@ -4,7 +4,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { siteConfig, type Locale } from "@/config/site";
-import { contentConfig } from "@/config/content";
+import { isIndexingAllowed, noIndex } from "@/lib/indexing";
 import { dirFor } from "@/lib/i18n/locale";
 import { fontVariables } from "@/lib/fonts";
 import { Header } from "@/components/layout/Header";
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: LayoutProps<"/[locale]">): Pr
     title: { default: t("defaultTitle"), template: `%s | ${t("siteName")}` },
     description: t("defaultDescription"),
     applicationName: t("siteName"),
-    robots: contentConfig.copyApproved ? undefined : { index: false, follow: true },
+    robots: isIndexingAllowed() ? undefined : noIndex,
   };
 }
 

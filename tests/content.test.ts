@@ -105,3 +105,12 @@ describe("rate limiter", () => {
     expect(rl.check("a", 1011).allowed).toBe(true);
   });
 });
+
+describe("search indexing", () => {
+  it("is allowed only with approved copy AND a real domain", async () => {
+    const { isIndexingAllowed } = await import("@/lib/indexing");
+    expect(isIndexingAllowed(true, true)).toBe(true);
+    expect(isIndexingAllowed(true, false)).toBe(false);
+    expect(isIndexingAllowed(false, true)).toBe(false);
+  });
+});

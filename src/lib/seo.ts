@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { siteConfig, type Locale } from "@/config/site";
-import { contentConfig } from "@/config/content";
+import { isIndexingAllowed, noIndex } from "@/lib/indexing";
 import { getPathname } from "@/i18n/navigation";
 import { ogLocale } from "@/lib/i18n/locale";
 import type { PageKey } from "@/config/pages";
@@ -45,6 +45,6 @@ export async function pageMetadata(
       images: [{ url: "/og-image.png", width: 1200, height: 630, alt: t("siteName") }],
     },
     twitter: { card: "summary_large_image", images: ["/og-image.png"] },
-    robots: contentConfig.copyApproved ? undefined : { index: false, follow: true },
+    robots: isIndexingAllowed() ? undefined : noIndex,
   };
 }

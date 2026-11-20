@@ -160,3 +160,10 @@ test("WhatsApp contact links use the configured number with a localized greeting
   );
   await expect(page.locator("footer")).toContainText("+20 10 5566 3884");
 });
+
+test("approved copy: no preview banner, but no indexing until the domain is set", async ({ page, request }) => {
+  await page.goto("/en");
+  await expect(page.getByText("website copy is awaiting final approval")).toHaveCount(0);
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
+  expect(await (await request.get("/robots.txt")).text()).toContain("Disallow: /");
+});

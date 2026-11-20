@@ -4,7 +4,7 @@ Date: 2026-11-20 · Scope: public marketing website only (Phases 0–4 of `IMPLE
 
 ## Summary
 
-The site is built and every automated check passes. It is **not ready for public launch yet**. Launch needs owner content and configuration (see "Before launch"). Until `contentConfig.copyApproved` is set to `true`, every page shows a small preview banner and search engines are asked not to index the site.
+The site is built and every automated check passes. The owner approved the website copy on 2026-11-20, so the preview banner is gone. Search engines stay blocked (`noindex` plus `Disallow: /`) until `NEXT_PUBLIC_SITE_URL` is set to the real domain. That rule lives in `src/lib/indexing.ts`. The remaining launch items are listed under "Before launch".
 
 The site has no coaching-platform features. There is no login, dashboard, database, health data, plan management, messaging or payments.
 
@@ -65,9 +65,9 @@ Unknown paths return a localized 404. `/` redirects to the visitor's browser lan
 |---|---|
 | `npm run typecheck` | Pass |
 | `npm run lint` | Pass (0 warnings) |
-| `npm test` (Vitest) | 35 / 35 pass |
+| `npm test` (Vitest) | 36 / 36 pass |
 | `npm run build` | Pass |
-| `npm run test:e2e` (Playwright) | 42 / 42 pass |
+| `npm run test:e2e` (Playwright) | 43 / 43 pass |
 
 What the end-to-end suite covers:
 - All 24 page/locale combinations: status 200, `lang` and `dir` set correctly, a single h1, canonical plus 4 hreflang links, logo artwork present, and no empty, `#` or placeholder links.
@@ -122,11 +122,11 @@ Screenshots: `docs/screenshots/`.
 
 ## Before launch (from `OPEN_ITEMS.md`)
 
-- [ ] Domain (not purchased yet): set `NEXT_PUBLIC_SITE_URL` once bought. Until then, canonical URLs and the sitemap use `http://localhost:3000`.
+- [ ] Domain (not purchased yet): set `NEXT_PUBLIC_SITE_URL` once bought, then **rebuild and redeploy**, because the value is fixed at build time. This also switches search indexing on. Until then, canonical URLs and the sitemap use `http://localhost:3000`, and crawlers are blocked.
 - [x] WhatsApp: `+20 10 5566 3884` (supplied 2026-11-20). It shows in the footer, as a WhatsApp button next to "Start your consultation", and as the main action on the Contact page, with a pre-filled greeting in the visitor's language.
 - [ ] Optional: a public email and social URLs in `src/config/business.ts`. Phone calls are not shown separately; set `phone` to show them too.
-- [ ] Approve all copy in three languages, then set `copyApproved: true`. This removes the banner and enables indexing.
-- [ ] Approve the FAQ answers and service descriptions, and confirm the service format (online, in person or both).
+- [x] Website copy approved in all three languages (2026-11-20). `copyApproved: true`.
+- [x] FAQ answers and service descriptions approved as written. They do not state the service format (online, in person or both); add it later if wanted.
 - [ ] Get the Privacy Policy and Terms legally reviewed for Egypt and the Gulf, then set `legalReviewed: true` and `legalLastUpdated`.
 - [ ] Choose an enquiry provider and sender identity, configure the env vars, and send a real test enquiry.
 - [ ] Optional: testimonials, transformations and recipes, each with written consent and approval.

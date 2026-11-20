@@ -11,6 +11,7 @@ export const siteConfig = {
   // Set NEXT_PUBLIC_SITE_URL to the official domain before launch (see docs/OPEN_ITEMS.md).
   // The fallback is a local URL so no invented domain is ever published.
   publicUrl: (process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000").replace(/\/$/, ""),
+  hasPublicUrl: Boolean(process.env.NEXT_PUBLIC_SITE_URL?.trim()),
 };
 
 export type Locale = (typeof siteConfig.locales)[number];
