@@ -1,0 +1,454 @@
+{
+  "meta": {
+    "siteName": "EQUIS Nutrition",
+    "defaultTitle": "EQUIS Nutrition — Nutrition and training coaching",
+    "defaultDescription": "Personalized nutrition and gym-aligned training coaching for Egypt and the Gulf, built around your goals, schedule and everyday life.",
+    "home": {
+      "title": "Nutrition and training coaching",
+      "description": "Practical nutrition and gym-aligned coaching designed around your goals, schedule and everyday life."
+    },
+    "about": {
+      "title": "About EQUIS",
+      "description": "The purpose, philosophy and coaching approach behind EQUIS Nutrition."
+    },
+    "services": {
+      "title": "Coaching services",
+      "description": "Fat-loss, muscle-gain, body-recomposition and combined nutrition and training coaching."
+    },
+    "howItWorks": {
+      "title": "How it works",
+      "description": "From your first enquiry to ongoing reviews: how EQUIS coaching works, step by step."
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "description": "Answers to common questions about EQUIS coaching."
+    },
+    "contact": {
+      "title": "Book a consultation",
+      "description": "Tell us about your goal and how you would like us to contact you."
+    },
+    "privacy": {
+      "title": "Privacy policy",
+      "description": "How the EQUIS website handles the information you share with us."
+    },
+    "terms": {
+      "title": "Terms of use",
+      "description": "The terms that apply when you use the EQUIS website."
+    },
+    "notFound": {
+      "title": "Page not found"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "howItWorks": "How it works",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "privacy": "Privacy policy",
+    "terms": "Terms of use",
+    "transformations": "Transformations",
+    "resources": "Recipes & resources",
+    "primary": "Main navigation",
+    "footer": "Footer navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to main content",
+    "homeLink": "EQUIS Nutrition — home",
+    "language": "Language"
+  },
+  "common": {
+    "ctaPrimary": "Start your consultation",
+    "ctaSecondary": "Explore the coaching approach",
+    "learnMore": "Learn more",
+    "seeAllFaq": "See all questions",
+    "draftBanner": "Preview: website copy is awaiting final approval.",
+    "legalDraft": "Draft — this document has not yet been legally reviewed and may change before launch.",
+    "lastUpdated": "Last updated: {date}"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Nutrition & training coaching",
+      "title": "Build a body you can work for.",
+      "lead": "Practical nutrition and gym-aligned coaching designed around your goals, schedule and everyday life."
+    },
+    "promise": {
+      "title": "Discipline you can keep. Food you can live with.",
+      "lead": "EQUIS helps you work toward your body-shape goals with a structure that fits real life — not the other way around.",
+      "items": [
+        {
+          "title": "Discipline",
+          "text": "Clear structure and consistent habits do the heavy lifting, week after week."
+        },
+        {
+          "title": "Realistic nutrition",
+          "text": "Practical food choices you can follow at home, at work and when life gets busy."
+        },
+        {
+          "title": "Gym-aligned support",
+          "text": "Nutrition and training designed to work together, so your effort in the gym counts."
+        }
+      ]
+    },
+    "services": {
+      "title": "Coaching built around your goal",
+      "lead": "Every client starts from a different place. Coaching is shaped to your goal, routine and starting point."
+    },
+    "process": {
+      "title": "How coaching works",
+      "lead": "A simple, personal process — from your first message to ongoing adjustments."
+    },
+    "principles": {
+      "title": "What guides our coaching",
+      "items": [
+        {
+          "title": "Sustainable fat loss",
+          "text": "Steady progress you can maintain, without extreme restriction."
+        },
+        {
+          "title": "Muscle retention",
+          "text": "Protecting the muscle you have while you change your body composition."
+        },
+        {
+          "title": "Gym performance",
+          "text": "Fuelling and structuring your training so you can keep progressing."
+        },
+        {
+          "title": "Adherence first",
+          "text": "A plan only works if you can follow it. Practical choices beat perfect ones."
+        },
+        {
+          "title": "Hydration, sleep & recovery",
+          "text": "The basics outside the gym that make the work inside it pay off."
+        },
+        {
+          "title": "Consistent progress reviews",
+          "text": "Regular check-ins with your coach to review progress and adjust the approach."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Common questions"
+    },
+    "finalCta": {
+      "title": "Ready to start?",
+      "lead": "Tell us about your goal. We will get back to you to discuss your needs and whether EQUIS is the right fit."
+    }
+  },
+  "services": {
+    "title": "Coaching services",
+    "lead": "Four ways to work with EQUIS. Each one is individualized to your goal, schedule and starting point — we discuss which fits you best during your consultation.",
+    "noGuarantee": "Results depend on many individual factors. We do not promise a specific amount of weight change or a fixed deadline.",
+    "items": [
+      {
+        "id": "fat-loss",
+        "title": "Fat-loss coaching",
+        "summary": "Practical nutrition and training support focused on sustainable progress and muscle retention.",
+        "points": [
+          "A realistic nutrition structure built around your routine",
+          "Training aligned with preserving muscle",
+          "Regular reviews to adjust the approach"
+        ]
+      },
+      {
+        "id": "muscle-gain",
+        "title": "Muscle-gain coaching",
+        "summary": "Nutrition and training structure supporting progressive resistance training and recovery.",
+        "points": [
+          "Nutrition that supports training and recovery",
+          "A progressive resistance-training structure",
+          "Attention to sleep and recovery habits"
+        ]
+      },
+      {
+        "id": "recomposition",
+        "title": "Body recomposition",
+        "summary": "Coordinated nutrition and training for improving body composition over time.",
+        "points": [
+          "Nutrition and training planned together",
+          "Focus on consistency over quick fixes",
+          "Progress reviewed beyond the number on the scale"
+        ]
+      },
+      {
+        "id": "nutrition-training",
+        "title": "Nutrition + training coaching",
+        "summary": "Integrated support for clients who want one connected system for both food and training.",
+        "points": [
+          "One coordinated plan for nutrition and training",
+          "Built around your schedule and gym access",
+          "Adjusted as your needs change"
+        ]
+      }
+    ]
+  },
+  "process": {
+    "title": "How it works",
+    "lead": "Here is what working with EQUIS looks like. Assessments and plans are handled directly with your coach as part of the service.",
+    "steps": [
+      {
+        "title": "Tell us about your goal",
+        "text": "Send a short consultation enquiry with your goal and how you would like us to contact you."
+      },
+      {
+        "title": "Discuss your needs",
+        "text": "We talk through your goal, routine and whether EQUIS coaching is a good fit for you."
+      },
+      {
+        "title": "Complete your assessment",
+        "text": "If we work together, you complete the appropriate assessment directly with your coach as part of the coaching service."
+      },
+      {
+        "title": "Receive your structure",
+        "text": "You receive an individualized nutrition and/or training structure designed around your life."
+      },
+      {
+        "title": "Review and adjust",
+        "text": "You review progress with your coach and the approach is adjusted as you go."
+      }
+    ],
+    "note": "Please do not send medical or health details through this website. Anything your coach needs will be collected directly during the coaching process."
+  },
+  "about": {
+    "title": "About EQUIS",
+    "lead": "EQUIS is a nutrition and training coaching brand built around discipline, practical routines and individualized progress.",
+    "purposeTitle": "Our purpose",
+    "purpose": "We help people work toward their body-shape goals through discipline, realistic nutrition and gym-aligned lifestyle support. We work with clients in Egypt and the Gulf — especially busy professionals and gym-focused people pursuing fat loss, muscle gain or body recomposition.",
+    "approachTitle": "Our approach",
+    "approach": [
+      {
+        "title": "Individualized, not one-size-fits-all",
+        "text": "Coaching starts from your goal, routine and starting point."
+      },
+      {
+        "title": "Consistency over shortcuts",
+        "text": "We focus on habits you can keep rather than quick fixes."
+      },
+      {
+        "title": "Nutrition and training as one system",
+        "text": "Food and training are planned to support each other."
+      },
+      {
+        "title": "Realistic and respectful",
+        "text": "No shame, no fear tactics and no miracle claims."
+      }
+    ],
+    "founderTitle": "Founder",
+    "founder": "EQUIS was founded and is led by {name}."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "lead": "Can't find your answer? Ask us in your consultation enquiry.",
+    "items": [
+      {
+        "q": "Who is EQUIS for?",
+        "a": "EQUIS is for people who want to work toward a body-shape goal — fat loss, muscle gain or body recomposition — with practical nutrition and gym-aligned support. Many of our clients are busy professionals and gym-focused people."
+      },
+      {
+        "q": "Can I join if I have a busy work schedule?",
+        "a": "Yes. Coaching is built around your real routine, including your working hours and the time you actually have for training and meals."
+      },
+      {
+        "q": "Do I need a gym membership?",
+        "a": "EQUIS coaching is designed around gym-aligned training. Tell us about your current training setup in your enquiry and we will discuss what fits you during your consultation."
+      },
+      {
+        "q": "Is the nutrition plan personalized?",
+        "a": "Yes. Nutrition is individualized to your goal, routine and food preferences after you complete your assessment with your coach."
+      },
+      {
+        "q": "Can I choose Egyptian foods?",
+        "a": "Practical food choices are central to our approach, so plans take into account the foods you enjoy and can easily find. You can discuss your preferences with your coach."
+      },
+      {
+        "q": "Do you offer online coaching?",
+        "a": "Coaching format and availability are confirmed during your consultation. Mention your country and preferred way of working in your enquiry."
+      },
+      {
+        "q": "What happens after I submit the consultation form?",
+        "a": "We review your enquiry and contact you using your preferred method to discuss your goal and whether EQUIS is the right fit. Submitting an enquiry does not commit you to anything."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Start your consultation",
+    "lead": "Tell us a little about your goal. We only ask for what we need to get back to you.",
+    "directTitle": "Prefer to contact us directly?",
+    "email": "Email",
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "privacyNote": "Please don't include medical history, medications, measurements or photos. We will never ask for them on this website.",
+    "form": {
+      "legend": "Consultation enquiry",
+      "required": "required",
+      "optional": "optional",
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone / WhatsApp",
+      "phoneHint": "Include your country code, e.g. <ltr>+20</ltr> or <ltr>+971</ltr>.",
+      "contactHint": "Please provide at least an email or a phone number.",
+      "country": "Country",
+      "countryPlaceholder": "Select your country",
+      "countries": {
+        "EG": "Egypt",
+        "SA": "Saudi Arabia",
+        "AE": "United Arab Emirates",
+        "KW": "Kuwait",
+        "QA": "Qatar",
+        "BH": "Bahrain",
+        "OM": "Oman",
+        "other": "Other"
+      },
+      "goal": "Main goal",
+      "goalPlaceholder": "Select a goal",
+      "goals": {
+        "fat-loss": "Fat loss",
+        "muscle-gain": "Muscle gain",
+        "recomposition": "Body recomposition",
+        "nutrition-training": "Nutrition + training coaching",
+        "not-sure": "Not sure yet"
+      },
+      "preferredContact": "Preferred contact method",
+      "methods": {
+        "email": "Email",
+        "phone": "Phone call",
+        "whatsapp": "WhatsApp"
+      },
+      "message": "Short message",
+      "messageHint": "Up to 1,000 characters. Please don't include health or medical information.",
+      "consent": "I agree to EQUIS contacting me about my enquiry using the details above, as described in the privacy policy.",
+      "privacyLink": "privacy policy",
+      "honeypot": "Leave this field empty",
+      "submit": "Send enquiry",
+      "submitting": "Sending…",
+      "errors": {
+        "nameRequired": "Please enter your name.",
+        "nameTooLong": "Name is too long.",
+        "emailInvalid": "Please enter a valid email address.",
+        "phoneInvalid": "Please enter a valid phone number.",
+        "contactRequired": "Please provide an email or a phone number.",
+        "methodRequired": "Please choose how you would like to be contacted.",
+        "methodEmailMissing": "Add an email address to be contacted by email.",
+        "methodPhoneMissing": "Add a phone number to be contacted by phone or WhatsApp.",
+        "messageTooLong": "Message must be 1,000 characters or fewer.",
+        "consentRequired": "Please confirm we may contact you.",
+        "invalid": "Please check the highlighted fields."
+      },
+      "status": {
+        "success": "Thank you — your enquiry has been received. We will contact you using your preferred method.",
+        "error": "Sorry, your enquiry could not be sent. Please try again in a moment.",
+        "rateLimited": "Too many attempts. Please wait a few minutes and try again.",
+        "notConfigured": "Online enquiries are not open yet, so this form cannot send messages at the moment.",
+        "notConfiguredWithContact": "Online enquiries are not open yet. Please use the direct contact details on this page instead.",
+        "notConfiguredNoContact": "Online enquiries are not open yet. Please check back soon."
+      }
+    }
+  },
+  "privacy": {
+    "title": "Privacy policy",
+    "sections": [
+      {
+        "h": "Who we are",
+        "p": [
+          "This website is operated by EQUIS Nutrition, a nutrition and training coaching brand led by {founder}."
+        ]
+      },
+      {
+        "h": "What we collect",
+        "p": [
+          "If you send a consultation enquiry, we collect only the details you choose to provide: your name, email address and/or phone number, country, main goal, preferred contact method and a short message.",
+          "We do not ask for, and ask you not to send, medical history, medications, allergies, body measurements, photos or other health information through this website."
+        ]
+      },
+      {
+        "h": "How we use it",
+        "p": [
+          "We use your enquiry only to respond to you and discuss whether our coaching is a good fit. We do not sell your information or use it for unrelated marketing."
+        ]
+      },
+      {
+        "h": "How your enquiry is delivered",
+        "p": [
+          "Your enquiry is sent securely to EQUIS through an email or form-delivery service provider acting on our behalf. Enquiry contents are not written to website logs or analytics."
+        ]
+      },
+      {
+        "h": "Cookies",
+        "p": [
+          "The website stores a small cookie to remember your language preference. We do not use advertising cookies."
+        ]
+      },
+      {
+        "h": "How long we keep it",
+        "p": [
+          "We keep enquiry details only for as long as needed to respond to you and to meet any legal obligations."
+        ]
+      },
+      {
+        "h": "Your choices",
+        "p": [
+          "You can ask us to access, correct or delete the information you sent us by contacting us through the contact page."
+        ]
+      },
+      {
+        "h": "Changes",
+        "p": [
+          "We may update this policy. The latest version will always be published on this page."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of use",
+    "sections": [
+      {
+        "h": "About this website",
+        "p": [
+          "This website provides general information about EQUIS Nutrition and its coaching services, and lets you send a consultation enquiry."
+        ]
+      },
+      {
+        "h": "Not medical advice",
+        "p": [
+          "Content on this website is general information and is not medical advice, diagnosis or treatment. If you have a medical condition, are pregnant, or take medication, speak with a qualified healthcare professional before changing your diet or training."
+        ]
+      },
+      {
+        "h": "No guaranteed results",
+        "p": [
+          "Individual results vary and depend on many factors. Nothing on this website is a promise of a specific outcome or timeline."
+        ]
+      },
+      {
+        "h": "Enquiries",
+        "p": [
+          "Sending an enquiry does not create a coaching agreement. Any coaching service is agreed separately and directly with EQUIS."
+        ]
+      },
+      {
+        "h": "Intellectual property",
+        "p": [
+          "The EQUIS name, logo and website content belong to EQUIS Nutrition and may not be copied or reused without permission."
+        ]
+      },
+      {
+        "h": "Changes",
+        "p": [
+          "We may update these terms. The latest version will always be published on this page."
+        ]
+      }
+    ]
+  },
+  "notFound": {
+    "title": "Page not found",
+    "lead": "The page you are looking for doesn't exist or isn't available yet.",
+    "back": "Back to home"
+  },
+  "footer": {
+    "tagline": "Personalized nutrition and training, built around your real routine.",
+    "follow": "Follow EQUIS",
+    "rights": "© {year} EQUIS Nutrition. All rights reserved.",
+    "legal": "Legal"
+  }
+}
