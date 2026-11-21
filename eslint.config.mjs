@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Instagram/marketing kit scripts are not part of the website.
+    "marketing/**",
   ]),
 ]);
 
