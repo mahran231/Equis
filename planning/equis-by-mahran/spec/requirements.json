@@ -1,0 +1,408 @@
+{
+  "version": "1.0",
+  "date": "2026-11-23",
+  "brand": "EQUIS BY MAHRAN",
+  "artifact_type": "specification_only",
+  "requirements": [
+    {
+      "id": "WEB-01",
+      "title": "Discovery",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "2",
+        "UI",
+        "RELEASE"
+      ]
+    },
+    {
+      "id": "WEB-02",
+      "title": "Packages",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "2"
+      ]
+    },
+    {
+      "id": "WEB-03",
+      "title": "Free book",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "2"
+      ]
+    },
+    {
+      "id": "ACC-01",
+      "title": "Authentication",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "1",
+        "SECURITY"
+      ]
+    },
+    {
+      "id": "ACC-02",
+      "title": "Account lifecycle",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "1",
+        "11",
+        "SECURITY"
+      ]
+    },
+    {
+      "id": "CLI-01",
+      "title": "Today",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "4",
+        "7",
+        "8",
+        "12"
+      ]
+    },
+    {
+      "id": "CLI-02",
+      "title": "Weekly plan",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "4",
+        "13"
+      ]
+    },
+    {
+      "id": "CLI-03",
+      "title": "Nutrition",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "5"
+      ]
+    },
+    {
+      "id": "CLI-04",
+      "title": "Workout and mobility",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "6"
+      ]
+    },
+    {
+      "id": "CLI-05",
+      "title": "Logs",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "7"
+      ]
+    },
+    {
+      "id": "CLI-06",
+      "title": "Intake and check-ins",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "3",
+        "9"
+      ]
+    },
+    {
+      "id": "CLI-07",
+      "title": "Progress/files",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "9",
+        "10"
+      ]
+    },
+    {
+      "id": "CLI-08",
+      "title": "Coach chat",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "11"
+      ]
+    },
+    {
+      "id": "CLI-09",
+      "title": "Notifications",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "12"
+      ]
+    },
+    {
+      "id": "CLI-10",
+      "title": "Exports",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "13"
+      ]
+    },
+    {
+      "id": "COA-01",
+      "title": "Client management",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "1",
+        "4",
+        "SECURITY"
+      ]
+    },
+    {
+      "id": "COA-02",
+      "title": "Plan authoring",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "4"
+      ]
+    },
+    {
+      "id": "COA-03",
+      "title": "Intake/analysis gate",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "3"
+      ]
+    },
+    {
+      "id": "COA-04",
+      "title": "Review inbox",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "5",
+        "9"
+      ]
+    },
+    {
+      "id": "COA-05",
+      "title": "History",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "14"
+      ]
+    },
+    {
+      "id": "COA-06",
+      "title": "Library",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "4",
+        "14"
+      ]
+    },
+    {
+      "id": "COA-07",
+      "title": "Freeze/end follow-up",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "8"
+      ]
+    },
+    {
+      "id": "COA-08",
+      "title": "Reports and communication",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "10",
+        "11",
+        "13"
+      ]
+    },
+    {
+      "id": "SYS-01",
+      "title": "",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "SECURITY"
+      ]
+    },
+    {
+      "id": "SYS-02",
+      "title": "",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "7",
+        "8"
+      ]
+    },
+    {
+      "id": "SYS-03",
+      "title": "",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "UI"
+      ]
+    },
+    {
+      "id": "SYS-04",
+      "title": "",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "15",
+        "RELEASE"
+      ]
+    },
+    {
+      "id": "SYS-05",
+      "title": "",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "10",
+        "RELEASE"
+      ]
+    },
+    {
+      "id": "SYS-06",
+      "title": "",
+      "status": "specified_not_implemented",
+      "priority": "required",
+      "spec": "03_FUNCTIONAL_SPEC.md",
+      "test_spec": "07_ACCEPTANCE_TESTS.md",
+      "implementation_path": null,
+      "test_result": "NOT_RUN",
+      "acceptance_case_refs": [
+        "2",
+        "5",
+        "13",
+        "RELEASE"
+      ]
+    }
+  ]
+}
